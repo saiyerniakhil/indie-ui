@@ -16,25 +16,31 @@
 .avatar__badge {
   position: absolute;
   background: green;
-  border-radius: 25px;
-  width: 15px;
-  height: 15px;
-  bottom: 0;
-  right: 0;
+  border-radius: 50%;
+  width: 18%;
+  height: 18%;
 }
-avatar--sm {
+.avatar--rounded__badge {
+  bottom: 6%;
+  right: 6%;
+}
+.avatar--squared__badge {
+  bottom: -5%;
+  right: -5%;
+}
+.avatar--sm {
   width: 50px;
   height: 50px;
 }
-avatar--md {
+.avatar--md {
   width: 75px;
   height: 75px;
 }
-avatar--lg {
+.avatar--lg {
   width: 100px;
   height: 100px;
 }
-avatar--xl {
+.avatar--xl {
   width: 125px;
   height: 125px;
 }
