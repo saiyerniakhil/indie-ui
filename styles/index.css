@@ -1,9 +1,11 @@
 /* Importing all the base CSS */
 @import "./base/reset.css";
+@import "./base/colors.css";
 
 /* Importing all components */
 @import "./components/avatar.css";
 @import "./components/image.css";
+@import "./components/alert.css";
 
 /* Importing helper classes */
 @import "./helpers/helpers.css";
