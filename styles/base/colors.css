@@ -1,0 +1,10 @@
+:root {
+  --info-primary: lightblue;
+  --info-secondary: blue;
+  --warning-primary: #fbe171;
+  --warning-secondary: #dda53e;
+  --danger-primary: #f8b4b4;
+  --danger-secondary: #d65757;
+  --success-primary: #c4f4c4;
+  --success-secondary: #3fa13f;
+}
