@@ -14,33 +14,33 @@
 }
 
 .alert--info {
-  background-color: var(--info-primary);
-  border-left: 0.25rem solid var(--info-secondary);
+  background-color: var(--info-secondary);
+  border-left: 0.25rem solid var(--info-primary);
 }
 .alert--info .alert__icon {
-  color: var(--info-secondary);
+  color: var(--info-primary);
 }
 
 .alert--warning {
-  background-color: var(--warning-primary);
-  border-left: 0.25rem solid var(--warning-secondary);
+  background-color: var(--warning-secondary);
+  border-left: 0.25rem solid var(--warning-primary);
 }
 .alert--warning .alert__icon {
-  color: var(--warning-secondary);
+  color: var(--warning-primary);
 }
 
 .alert--danger {
-  background-color: var(--danger-primary);
-  border-left: 0.25rem solid var(--danger-secondary);
+  background-color: var(--danger-secondary);
+  border-left: 0.25rem solid var(--danger-primary);
 }
 .alert--danger .alert__icon {
-  color: var(--danger-secondary);
+  color: var(--danger-primary);
 }
 
 .alert--success {
-  background-color: var(--success-primary);
-  border-left: 0.25rem solid var(--success-secondary);
+  background-color: var(--success-secondary);
+  border-left: 0.25rem solid var(--success-primary);
 }
 .alert--success .alert__icon {
-  color: var(--success-secondary);
+  color: var(--success-primary);
 }
