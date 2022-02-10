@@ -1,0 +1,82 @@
+.btn {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: 2px var(--focus-accent-color) solid;
+}
+.btn--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn--link {
+  color: var(--info-primary);
+  opacity: 0.8;
+  background-color: transparent;
+}
+.btn--link:hover,
+.btn--link:focus {
+  text-decoration: underline;
+  opacity: 1;
+  outline: none;
+}
+
+.btn--info {
+  background-color: var(--info-primary);
+  border: 2px var(--info-primary) solid;
+  color: var(--white);
+}
+.btn--info.btn--outlined {
+  background-color: transparent;
+  color: var(--info-primary);
+}
+
+.btn--warning {
+  background-color: var(--warning-primary);
+  border: 2px var(--warning-primary) solid;
+  color: var(--black);
+}
+.btn--warning.btn--outlined {
+  background-color: transparent;
+  color: var(--warning-primary);
+}
+
+.btn--danger {
+  background-color: var(--danger-primary);
+  border: 2px var(--danger-primary) solid;
+  color: var(--white);
+}
+.btn--danger.btn--outlined {
+  background-color: transparent;
+  color: var(--danger-primary);
+}
+
+.btn--success {
+  background-color: var(--success-primary);
+  border: 2px var(--success-primary) solid;
+  color: var(--white);
+}
+.btn--success.btn--outlined {
+  background-color: transparent;
+  color: var(--success-primary);
+}
+
+.btn--icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn--floating {
+  position: fixed;
+  z-index: 5;
+  /* TODO: Add Border Shadow as a generic helper */
+  box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%),
+    0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+}
