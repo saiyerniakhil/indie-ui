@@ -14,8 +14,9 @@
   border-top-right-radius: var(--card-border-radius);
 }
 .card__body {
-  padding: 1rem;
-  padding-top: 0.5rem;
+}
+.card__header {
+  padding: 0 1rem;
 }
 .card__heading {
   font-size: 1.25rem;
@@ -30,11 +31,16 @@
 .card__text {
   font-size: 1rem;
   margin-top: 1rem;
+  padding: 0rem 1rem;
 }
 .card__footer {
   display: inline-flex;
   gap: 0.5rem;
   margin-top: 0.5rem;
+  padding: 0rem 1rem;
+}
+.card__body:last-child {
+  margin-bottom: 1rem;
 }
 
 .card--text-overlay {
@@ -46,7 +52,7 @@
 
 .card--text-overlay .card__header {
   position: absolute;
-  top: 6rem; /* TODO: add these positions to change dynamic based on image width and height */
+  top: 6rem;
   left: 0%;
   padding-left: 0.5rem;
   color: var(--white);
@@ -62,4 +68,10 @@
 .card--horizontal .card__thumbnail > img {
   border-top-right-radius: 0; /* reset border radius */
   border-bottom-left-radius: var(--card-border-radius);
+}
+
+.card--horizontal .card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
