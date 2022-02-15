@@ -1,0 +1,65 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
+  margin: 1rem;
+}
+.card__thumbnail > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: var(--card-border-radius);
+  border-top-right-radius: var(--card-border-radius);
+}
+.card__body {
+  padding: 1rem;
+  padding-top: 0.5rem;
+}
+.card__heading {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+.card__subheading {
+  font-size: 1.125rem;
+  margin-top: 0.25rem;
+  opacity: 0.8;
+}
+.card__text {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.card__footer {
+  display: inline-flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.card--text-overlay {
+  position: relative;
+}
+.card--text-overlay .card__thumbnail {
+  filter: brightness(90%);
+}
+
+.card--text-overlay .card__header {
+  position: absolute;
+  top: 6rem; /* TODO: add these positions to change dynamic based on image width and height */
+  left: 0%;
+  padding-left: 0.5rem;
+  color: var(--white);
+  opacity: 0.8;
+}
+
+.card--horizontal {
+  flex-direction: row;
+  width: auto;
+  height: 200px;
+}
+
+.card--horizontal .card__thumbnail > img {
+  border-top-right-radius: 0; /* reset border radius */
+  border-bottom-left-radius: var(--card-border-radius);
+}
