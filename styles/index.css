@@ -7,6 +7,7 @@
 @import "./components/image.css";
 @import "./components/alert.css";
 @import "./components/buttons.css";
+@import "./components/cards.css";
 
 /* Importing helper classes */
 @import "./helpers/helpers.css";

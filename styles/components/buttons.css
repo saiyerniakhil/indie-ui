@@ -1,11 +1,12 @@
 .btn {
+  display: inline-block;
   padding: 0.5rem 1rem;
-  margin: 0.5rem;
   border-radius: 4px;
   border: none;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
+  min-width: 5rem;
 }
 .btn:focus {
   outline: 2px var(--focus-accent-color) solid;
