@@ -1,7 +1,6 @@
 .btn {
   display: inline-block;
   padding: 0.5rem 1rem;
-  /* margin: 0.5rem; removing predefined padding since  it affects the position in components*/
   border-radius: 4px;
   border: none;
   font-size: 1rem;
