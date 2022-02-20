@@ -2,8 +2,6 @@
   position: relative;
   margin: 1rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .avatar__img--rounded {
   object-fit: cover;
@@ -15,19 +13,53 @@
 }
 .avatar__badge {
   position: absolute;
-  background: green;
   border-radius: 50%;
   width: 18%;
   height: 18%;
 }
-.avatar--rounded__badge {
+.avatar__badge--active,
+.badge--active {
+  background: var(--success-primary);
+  color: var(--white);
+}
+.avatar__badge--inactive,
+.badge--inactive {
+  background: var(--danger-primary);
+  color: var(--white);
+}
+.avatar__badge--idle,
+.adge--idle {
+  background: var(--warning-primary);
+  color: var(--white);
+}
+
+.avatar--badge_count,
+.badge--count {
+  color: var(--white);
+  padding: 4px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+}
+.avatar--rounded__badge--bottom-right {
   bottom: 6%;
   right: 6%;
 }
-.avatar--squared__badge {
+.avatar--rounded__badge--top-right {
+  top: 6%;
+  right: 6%;
+}
+.avatar--squared__badge--bottom-right {
   bottom: -5%;
   right: -5%;
 }
+.avatar--squared__badge--top-right {
+  top: -5%;
+  right: -5%;
+}
+
 .avatar--sm {
   width: 50px;
   height: 50px;
@@ -43,4 +75,34 @@
 .avatar--xl {
   width: 125px;
   height: 125px;
+}
+
+/* CSS for Badge Only */
+
+.icon {
+  width: 32px;
+  position: relative;
+  height: 32px;
+}
+.badge {
+  position: absolute;
+  border-radius: 50%;
+  width: 18%;
+  height: 18%;
+}
+.badge--dot {
+  width: 25%;
+  height: 25%;
+}
+.icon > svg {
+  width: 32px;
+  height: 32px;
+}
+.badge--top-right {
+  top: 0;
+  right: 0;
+}
+.badge--bottom-right {
+  bottom: 0;
+  right: 0;
 }
