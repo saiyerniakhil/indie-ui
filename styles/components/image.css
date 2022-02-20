@@ -2,3 +2,13 @@
   border-radius: 50%;
   object-fit: cover;
 }
+
+.img-rounded-corners {
+  border-radius: var(--generic-border-radius);
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
