@@ -1,0 +1,34 @@
+input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid gray;
+  border-radius: var(--generic-border-radius);
+}
+
+/* text based input styles eg. text, email, tel etc. */
+input:optional {
+  border-color: var(--grey);
+}
+input:invalid {
+  background: url(../../assets/x-circle.svg) no-repeat 95% 50%;
+  border-color: var(--danger-primary);
+}
+input:required:valid {
+  background: url(../../assets/check-circle.svg) no-repeat 95% 50%;
+  border-color: var(--success-primary);
+}
+input:focus:invalid {
+  background: url(../../assets/x-circle.svg) no-repeat 95% 50%;
+  transition: background ease-in-out 0.05s;
+}
+input:focus:required:valid {
+  background: url(../../assets/check-circle.svg) no-repeat 95% 50%;
+  transition: background ease-in-out 0.05s;
+}
+
+/* text area styles */
+textarea {
+  font-size: 1rem;
+  border: 2px solid;
+  border-radius: var(--generic-border-radius);
+}
