@@ -36,8 +36,8 @@
 .avatar--badge_count,
 .badge--count {
   color: var(--white);
-  padding: 4px;
-  font-size: 12px;
+  padding: var(--space-2);
+  font-size: var(--space-6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,9 +80,9 @@
 /* CSS for Badge Only */
 
 .icon {
-  width: 32px;
+  width: var(--space-16);
   position: relative;
-  height: 32px;
+  height: var(--space-16);
 }
 .badge {
   position: absolute;
@@ -95,8 +95,8 @@
   height: 25%;
 }
 .icon > svg {
-  width: 32px;
-  height: 32px;
+  width: var(--space-16);
+  height: var(--space-16);
 }
 .badge--top-right {
   top: 0;

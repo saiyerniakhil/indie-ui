@@ -1,7 +1,7 @@
 .btn {
   display: inline-block;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
+  border-radius: var(--generic-border-radius);
   border: none;
   font-size: 1rem;
   font-weight: 500;
@@ -9,7 +9,7 @@
   min-width: 5rem;
 }
 .btn:focus {
-  outline: 2px var(--focus-accent-color) solid;
+  outline: var(--space-1) var(--focus-accent-color) solid;
 }
 .btn--disabled {
   opacity: 0.5;
@@ -30,7 +30,7 @@
 
 .btn--info {
   background-color: var(--info-primary);
-  border: 2px var(--info-primary) solid;
+  border: var(--space-1) var(--info-primary) solid;
   color: var(--white);
 }
 .btn--info.btn--outlined {
@@ -40,7 +40,7 @@
 
 .btn--warning {
   background-color: var(--warning-primary);
-  border: 2px var(--warning-primary) solid;
+  border: var(--space-1) var(--warning-primary) solid;
   color: var(--black);
 }
 .btn--warning.btn--outlined {
@@ -50,7 +50,7 @@
 
 .btn--danger {
   background-color: var(--danger-primary);
-  border: 2px var(--danger-primary) solid;
+  border: var(--space-1) var(--danger-primary) solid;
   color: var(--white);
 }
 .btn--danger.btn--outlined {
@@ -60,7 +60,7 @@
 
 .btn--success {
   background-color: var(--success-primary);
-  border: 2px var(--success-primary) solid;
+  border: var(--space-1) var(--success-primary) solid;
   color: var(--white);
 }
 .btn--success.btn--outlined {
@@ -78,6 +78,5 @@
   position: fixed;
   z-index: 5;
   /* TODO: Add Border Shadow as a generic helper */
-  box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%),
-    0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+  box-shadow: var(--floating-button-box-shadow);
 }

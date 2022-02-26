@@ -1,8 +1,13 @@
 :root {
-  --card-box-shadow:   0px 4px 12px rgba(0, 0, 0, 0.1);
+  --card-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  --floating-button-box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%),
+  0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px var(--space-1) rgb(0 0 0 / 12%);
   --card-border-radius: 4px;
   --generic-border-radius: 4px;
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.text-center {
+  text-align: center;
 }
