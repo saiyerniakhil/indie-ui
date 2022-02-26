@@ -1,7 +1,11 @@
+:root {
+  --form-gray: gray;
+}
+
 input {
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: var(--space-1) solid gray;
+  border: var(--space-1) solid var(--form-gray);
   border-radius: var(--generic-border-radius);
 }
 
